@@ -11,6 +11,9 @@
         font-family: 'Helvetica';
 
       }
+      #menu-show-hide{
+        display:none;
+      }
       div.header {
         width:100%;
         height:50px;
@@ -69,16 +72,34 @@
       @media only screen and (max-width:600px){
         div.header {
           background-color: blue;
+          height:auto;
+          display:none;
         }
         .twoboxes .columns{
           width:100%;
         }
+        div.header ul li {
+          width:100%;
+
+        }
+        div.header ul li a{
+          font-size: 50px;
+        }
+        #menu-show-hide{
+          text-align: center;
+          font-size:40px;
+          display:block;
+        }
+
       }
 
 
     </style>
   </head>
   <body>
+    <div id="menu-show-hide">
+      Menu
+    </div>
     <div class="header">
       <ul>
         <li>
@@ -90,6 +111,24 @@
         <li>
           <a href=" https://www.msn.com/en-sg/">MSN </a>
           </li>
+          <li>
+            <a href="https://www.google.com/">Google</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/">Facebook</a>
+             </li>
+          <li>
+            <a href=" https://www.msn.com/en-sg/">MSN </a>
+            </li>
+            <li>
+              <a href="https://www.google.com/">Google</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/">Facebook</a>
+               </li>
+            <li>
+              <a href=" https://www.msn.com/en-sg/">MSN </a>
+              </li>
       </ul>
     </div>
 
