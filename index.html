@@ -94,14 +94,29 @@
       }
     </style>
     <script>
-      
+      function menuShowHide(){
+
+        var x = document.getElementById("menuWrapper");
+
+        if( x.style.display == "none" ){ //cannot see menuWrapper
+
+          x.style.display = "block"; //assign display block to menuWRapper (unhide)
+
+        } else { //can see menuWRapper
+
+          x.style.display = "none"; // hide menuWRapper
+
+        }
+
+
+      }
     </script>
   </head>
   <body>
-    <div id="menu-show-hide">
+    <div id="menu-show-hide" onclick="menuShowHide()">
       Menu
     </div>
-    <div class="header">
+    <div class="header" id="menuWrapper">
       <ul>
         <li>
           <a href="https://www.google.com/">Google</a>
