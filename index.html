@@ -42,8 +42,10 @@
         color: red;
       }
       div#img-div{
-        width:100%;
-        background-color: yellow;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
       }
       .twoboxes{
         width:100%;
@@ -55,7 +57,22 @@
       .twoboxes .columns{
         width:30%;
         text-align: justify;
-        
+        border: 2px solid #000;
+      }
+      .twoboxes .spacer1{
+        width:10%;
+      }
+      .twoboxes .spacer2{
+        width:15%;
+      }
+
+      @media only screen and (max-width:600px){
+        div.header {
+          background-color: blue;
+        }
+        .twoboxes .columns{
+          width:100%;
+        }
       }
 
 
@@ -81,11 +98,11 @@
     </div>
 
     <div class="twoboxes">
-      <div style="width:15%;"></div>
+      <div class="spacer1"></div>
       <div class="columns">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eligendi magni amet aut animi repellendus vitae odit ullam, minima illo, dolor magnam iusto hic expedita exercitationem unde quidem nemo suscipit.
       </div>
-      <div style="width:10%;"></div>
+      <div class="spacer2"></div>
       <div class="columns">
         Lorem  doloribus, sunt deserunt possimus. Ratione, a. Adipisci dolorem velit animi, magni nisi architecto deserunt atque, voluptatibus nostrum, dignissimos quis eaque!
       </div>
